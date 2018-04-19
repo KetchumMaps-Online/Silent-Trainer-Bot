@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Donation:
+class Elite4:
     """Gives the link to KetchumMaps donation page."""
 
     def __init__(self, bot):
@@ -35,4 +35,4 @@ class Donation:
 
 
 def setup(bot):
-    bot.add_cog(Donation(bot))
+    bot.add_cog(Elite4(bot))
