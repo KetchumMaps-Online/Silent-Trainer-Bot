@@ -2,15 +2,15 @@ import discord
 from discord.ext import commands
 
 class Donation:
-    """Gives the link to KetchumMaps donation page."""
+    """Donations"""
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command(hidden=False)
     async def donate(self):
-        """Gives the link to KetchumMaps donation page."""
-        await self.bot.say("**__PayPal__**\nhttp://www.paypal.me/ketchumamps\nDonate to help us continue our vission")
+        """Donations"""
+        await self.bot.say("**__PayPal__**\nhttp://www.paypal.me/ketchumamps\nDonate to help keep things going")
 
 def setup(bot):
     bot.add_cog(Donation(bot))
